@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>DotaComments</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header class="header">
+		<div class="logo">
+			<img src="img/logo.svg" />
+			Баха<span>DOTA</span>история
+		</div>
+
+		<div class="header__information">
+			Прокомментируйте мою работу, пожалуйста!
+		</div>
+
+		<div class="social__link">
+			<a href="https://vk.com/check_dat"><img src="img/vk.svg"></a>
+		</div>
+	</header>
+
+	<main id="main">
+		<div class="site__information">
+			<div class="site__information__picture">
+				<img src="img/pudge.png" />
+			</div>
+
+			<div class="site__information__text">
+				<h2>Страница для отзывов</h2>
+				<p>	
+					Здесь вы можете оставлять свои жалобы и предложения.<br>
+					Комментарии отоброжаются в реальном режиме.<br>
+					Буду благодарен за адекватную критику.
+				</p>
+			</div>
+		</div>
+
+		<img src="img/back.png" style="position: absolute; align-self: flex-end; width: 64%; height: 75%; top: 18%;">
+
+		<div class="form">
+			<form name="comment" method="POST" class="comment">
+				<p>
+					<label>Ваше имя:</label>
+					<input type="text" name="name" placeholder="Иван Иванов" id="name" />
+				</p>
+
+				<p>
+					<label>Ваш пол:</label>
+					<div style="font-family: cursive; font-size: 1.2em;">
+						<label for="man" style="cursor: pointer;">Муж. </label><input type="radio" id="man" name="sex" value="man" />
+
+						<label for="woman" style="cursor: pointer;">Жен. </label><input type="radio" id="woman" name="sex" value="woman" />
+					</div>
+				</p>
+
+				<p>
+					<label>Ваш e-mail:</label>
+					<input type="email" id="email" name="email" placeholder="ivanov@ivan.com" />
+				</p>
+
+				<p>
+					<label>Текст сообщения:</label>
+					<textarea placeholder="Введите сюда ваш комментарий" id="text"></textarea>
+				</p>
+
+				<p>
+					<input type="button" name="submit" class="btn__submit" value="Отправить" />
+				</p>
+			</form>
+		</div>
+
+	<img #id="loading" src="img/loading.gif" style="position: absolute; align-self: center; display: none;">
+
+	<div id="content__area">
+		<div class="massage">
+			Ваши комментарии:
+		</div>
+	</div>
+
+	</main>
+
+	<footer class="footer">
+		<div class="thanks">
+			Спасибо, что оставили комментарий!
+		</div>
+
+		<div class="logo">
+			<a href="../first/index.html" style="text-decoration: none; color: #fff;">Баха<span>DOTA</span>история</a>
+		</div>
+
+		<div class="powered_by">
+			&copy Haliullin_B
+		</div>
+	</footer>
+
+	<script type="text/javascript" src="../first/scripts/jquery-3.6.0.js"></script>
+
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
