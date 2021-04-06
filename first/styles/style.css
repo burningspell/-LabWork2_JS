@@ -1,0 +1,140 @@
+
+*{
+	margin:0;
+	padding: 0;
+}
+body{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+	background: linear-gradient(0deg, rgb(143, 143, 143) 38%, rgb(188, 188, 188));
+	background-repeat: cover;
+}
+/* Стили для шапки */
+.header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+	background: linear-gradient(0deg, rgb(128, 0, 0), rgb(0, 0, 0));
+	box-shadow: 0px 12px 8px 0px rgba(0, 0, 0, 0.3);
+	color: #fff;
+}
+.logo{
+	display: flex;
+	align-items: center;
+	font-size: 2rem;
+	font-family: cursive;
+	font-weight: bold;
+	margin-right: 10px;
+}
+.logo img{
+	width: 40px;
+	height: 40px;
+	margin-right: 1%;
+}
+.logo span{
+	font-family: "Montserrat", sans-serif;
+}
+.header__information{
+	font-size: 1.1rem;
+	font-family: cursive;
+}
+.social__link img{
+	height: 40px;
+	width: 40px;
+}
+/* Стили для всего контента */
+#main{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.content{
+	min-height: 200px;
+	margin: 2%;
+	padding: 2%;
+	display: flex;
+	flex-wrap: wrap;
+	background: rgba( 255 , 255, 255, 0.5);
+	box-shadow: 3px 12px 8px 0px rgba(0, 0, 0, 0.3);
+}
+.content .content__picture{
+	width: 30%;
+}
+.content__information{
+	width: 64%;
+	margin: 0 0 0 2%; 
+	display: flex;
+	flex-direction: column;
+}
+.information__theme{
+	align-self: center;
+	font-size: 1.4em;
+	font-family: cursive;
+}
+#loading{
+	margin: 2% 0;
+	align-self: center;
+	width: 60px;
+	height: 60px;
+	display: none;
+}
+#button__more{
+	align-self: center;
+	margin-bottom: 2%;
+	padding: 1%;
+	outline: none;
+	border: 0;
+	border-radius: 30px; 
+	font-size: 1.4em;
+	font-family: cursive;
+	box-shadow: 3px 12px 8px 0px rgba(0, 0, 0, 0.3);
+}
+#button__more:hover{
+	cursor: pointer;
+	background: #ddd;
+}
+#button__more:active{
+	background: rgb(20, 111, 2);
+}
+/* Стили для футтера */
+.footer{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	padding: 2%;
+	background: #222;
+	color: #fff;
+}
+.footer .thanks{
+	font-family: cursive;
+}
+@media (max-width: 900px)  {
+  .content {
+  flex-direction: column;
+  }
+  .content__picture{
+  	align-self: center;
+  	height: 300px;
+    min-width: 100%;
+  }
+  .content__information{
+  	width: 100%;
+  }
+}
+@media only screen and (max-device-width: 480px) {
+  .content {
+  flex-direction: column;
+  }
+  .content__picture{
+  	align-self: center;
+  	height: 300px;
+    min-width: 100%;
+  }
+  .content__information{
+  	width: 100%;
+  }
+}
+
